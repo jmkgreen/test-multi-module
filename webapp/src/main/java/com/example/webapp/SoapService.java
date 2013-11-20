@@ -6,12 +6,14 @@
 
 package com.example.webapp;
 
+import javax.ejb.Stateless;
 import javax.jws.WebService;
 
 /**
  *
  * @author jgreen
  */
+@Stateless
 @WebService(targetNamespace = "http://www.example.net/2013-11-20",
         name = "SoapService",
         portName = "SoapServicePort",
